@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #e2e2e2;
+
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+}
+
+header{
+    grid-area: header;
+    background-color: #0d6a8f;
+    color: white;
+    padding: 1.5rem;/* essa tag é de espaço*/
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;   /*lembrar que o gap é o espaço dos itens*/
+    margin-top: 1rem;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    opacity: 0.7;
+}
+
+main{
+    grid-area: main;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1.25rem;
+
+    max-width: 62.5rem;
+    margin: 1.25rem auto;
+    padding: 0 1rem;
+}
+
+article{
+    background: white;
+    padding: 1.25rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 0.3rem 0.6rem rgba(0,0,0,0.1);
+}
+
+article h2{
+    margin-bottom: 0.6rem;
+}
+
+article p{
+    margin-top: 0.6rem;
+    line-height: 1.5;
+}
+
+figure{
+    margin-top: 1rem;
+}
+
+img{
+    width: 100%;
+    border-radius: 0.6rem;
+}
+
+aside{
+    background: white;
+    padding: 1.25rem;
+    border-radius: 0.6rem;
+    height: fit-content;
+    box-shadow: 0 0.3rem 0.6rem rgba(0,0,0,0.1);
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside li{
+    margin-top: 0.6rem;
+}
+
+aside a{
+    text-decoration: none;
+    color: #0d6a8f;
+}
+
+aside a:hover{
+    text-decoration: underline;
+}
+
+figcaption{
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #777;
+    font-style: italic;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+    padding: 1rem;
+    background-color: #0d6a8f;
+    color: white;
+}
+
+@media (max-width: 768px){
+
+    main{
+        grid-template-columns: 1fr;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+}
