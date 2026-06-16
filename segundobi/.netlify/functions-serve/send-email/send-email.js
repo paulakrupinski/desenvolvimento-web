@@ -1,0 +1,1 @@
+module.exports = require('./leadpage/netlify/functions/send-email.js')

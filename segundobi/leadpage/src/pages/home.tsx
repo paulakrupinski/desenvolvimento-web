@@ -165,33 +165,33 @@ export default function Home() {
 
             <section id="hero">
 
-    <div className="hero-content">
-        <span className="hero-tag">FEITO À MÃO, COM AMOR</span>
-        <h1>Aromas que transformam ambientes</h1>
-        <p>Velas artesanais produzidas com ingredientes de qualidade para tornar seus momentos mais especiais e acolhedores.</p>
-        
-        <div className="hero-buttons flex gap-1">
-            
-            <span>
-                <a href="#pricing">
-                    <Button text="Conhecer Produtos" />
-                </a>
-            </span>
-            
-           
-            <span className="desktop-only">
-                <a href="#contact">
-                    <Button text="Fale Conosco" secondary />
-                </a>
-            </span>
-        </div>
-    </div>
+                <div className="hero-content">
+                    <span className="hero-tag">FEITO À MÃO, COM AMOR</span>
+                    <h1>Aromas que transformam ambientes</h1>
+                    <p>Velas artesanais produzidas com ingredientes de qualidade para tornar seus momentos mais especiais e acolhedores.</p>
 
-    <div className="hero-image">
-        <img src={HeroImage} alt="Velas aromáticas artesanais" />
-    </div>
+                    <div className="hero-buttons flex gap-1">
 
-</section>
+                        <span>
+                            <a href="#pricing">
+                                <Button text="Conhecer Produtos" />
+                            </a>
+                        </span>
+
+
+                        <span className="desktop-only">
+                            <a href="#contact">
+                                <Button text="Fale Conosco" secondary />
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+                <div className="hero-image">
+                    <img src={HeroImage} alt="Velas aromáticas artesanais" />
+                </div>
+
+            </section>
 
             <section className="container" id="solution">
 
@@ -228,268 +228,268 @@ export default function Home() {
                     />
 
                 </section>
-        </section>
-
-        
-
-<section id="testimonials">
-
-    <header>
-        <span>
-            <p className="desktop-only">
-                Conselho de quem conhece
-            </p>
-
-            <h2>Cada cliente importa!</h2>
-        </span>
-
-        <p>
-            Descubra a experiência de quem já se encantou com nossas velas.
-        </p>
-    </header>
-
-    <section className="carousel">
-
-    <div className="carousel-content">
-
-        <TestimonialCard
-            image={Cliente1}
-            testimony="A fragrância de lavanda deixou meu quarto muito mais aconchegante."
-            name="Daniel Petrich"
-            role="Cliente"
-            stars={5}
-            starIcon={Star}
-        />
-
-        <TestimonialCard
-            image={Cliente2}
-            testimony="Comprei para presentear e foi um sucesso. A embalagem é linda e o aroma permanece por horas."
-            name="Paula Krupinski"
-            role="Cliente"
-            stars={5}
-            starIcon={Star}
-        />
-
-        <TestimonialCard
-            image={Cliente3}
-            testimony="Dá para perceber o carinho colocado em cada vela. Minha sala ganhou outra atmosfera."
-            name="Paulo Cesar"
-            role="Cliente"
-            stars={5}
-            starIcon={Star}
-        />
-
-    </div>
-
-    <div className="carousel-content">
-
-        <TestimonialCard
-            image={Cliente1}
-            testimony="A fragrância de lavanda deixou meu quarto muito mais aconchegante."
-            name="Daniel Petrich"
-            role="Cliente"
-            stars={5}
-            starIcon={Star}
-        />
-
-        <TestimonialCard
-            image={Cliente2}
-            testimony="Comprei para presentear e foi um sucesso. A embalagem é linda e o aroma permanece por horas."
-            name="Paula Krupinski"
-            role="Cliente"
-            stars={5}
-            starIcon={Star}
-        />
-
-        <TestimonialCard
-            image={Cliente3}
-            testimony="Dá para perceber o carinho colocado em cada vela. Minha sala ganhou outra atmosfera."
-            name="Paulo Cesar"
-            role="Cliente"
-            stars={5}
-            starIcon={Star}
-        />
-
-    </div>
+            </section>
+
+
+
+            <section id="testimonials">
+
+                <header>
+                    <span>
+                        <p className="desktop-only">
+                            Conselho de quem conhece
+                        </p>
 
-</section>
+                        <h2>Cada cliente importa!</h2>
+                    </span>
+
+                    <p>
+                        Descubra a experiência de quem já se encantou com nossas velas.
+                    </p>
+                </header>
+
+                <section className="carousel">
+
+                    <div className="carousel-content">
+
+                        <TestimonialCard
+                            image={Cliente1}
+                            testimony="A fragrância de lavanda deixou meu quarto muito mais aconchegante."
+                            name="Daniel Petrich"
+                            role="Cliente"
+                            stars={5}
+                            starIcon={Star}
+                        />
 
-</section>
+                        <TestimonialCard
+                            image={Cliente2}
+                            testimony="Comprei para presentear e foi um sucesso. A embalagem é linda e o aroma permanece por horas."
+                            name="Paula Krupinski"
+                            role="Cliente"
+                            stars={5}
+                            starIcon={Star}
+                        />
+
+                        <TestimonialCard
+                            image={Cliente3}
+                            testimony="Dá para perceber o carinho colocado em cada vela. Minha sala ganhou outra atmosfera."
+                            name="Paulo Cesar"
+                            role="Cliente"
+                            stars={5}
+                            starIcon={Star}
+                        />
 
-<section id="pricing" className="container">
+                    </div>
 
-    <header>
-        <p className="desktop-only">Planos e preços</p>
-        <h2>Nossos Kits</h2>
-    </header>
+                    <div className="carousel-content">
 
-    <section className="even-columns gap-1.5">
+                        <TestimonialCard
+                            image={Cliente1}
+                            testimony="A fragrância de lavanda deixou meu quarto muito mais aconchegante."
+                            name="Daniel Petrich"
+                            role="Cliente"
+                            stars={5}
+                            starIcon={Star}
+                        />
 
-        {/* Kit Básico */}
-        <div className="pricing-card">
+                        <TestimonialCard
+                            image={Cliente2}
+                            testimony="Comprei para presentear e foi um sucesso. A embalagem é linda e o aroma permanece por horas."
+                            name="Paula Krupinski"
+                            role="Cliente"
+                            stars={5}
+                            starIcon={Star}
+                        />
 
-            <span className="plan">
-                <h3>Básico</h3>
-                <p>Ideal para conhecer nossos aromas artesanais.</p>
-            </span>
+                        <TestimonialCard
+                            image={Cliente3}
+                            testimony="Dá para perceber o carinho colocado em cada vela. Minha sala ganhou outra atmosfera."
+                            name="Paulo Cesar"
+                            role="Cliente"
+                            stars={5}
+                            starIcon={Star}
+                        />
 
-            <h2>R$ 39,90</h2>
+                    </div>
 
-            <Button text="Comprar Agora" secondary />
+                </section>
 
-            <span className="hr"></span>
+            </section>
 
-            <span className="features">
-                <img src={Check} alt="check" width={24} height={24} />
-                <p>1 vela aromática</p>
-            </span>
+            <section id="pricing" className="container">
 
-            <span className="features">
-                <img src={Check} alt="check" width={24} height={24} />
-                <p>Embalagem presenteável</p>
-            </span>
+                <header>
+                    <p className="desktop-only">Planos e preços</p>
+                    <h2>Nossos Kits</h2>
+                </header>
 
-            <span className="features">
-                <img src={Check} alt="check" width={24} height={24} />
-                <p>Escolha da fragrância</p>
-            </span>
+                <section className="even-columns gap-1.5">
 
-        </div>
+                    {/* Kit Básico */}
+                    <div className="pricing-card">
 
-        {/* Kit Premium */}
-        <div className="pricing-card premium">
+                        <span className="plan">
+                            <h3>Básico</h3>
+                            <p>Ideal para conhecer nossos aromas artesanais.</p>
+                        </span>
 
-            <span className="bonus">
-                <p>MAIS VENDIDO</p>
-            </span>
+                        <h2>R$ 39,90</h2>
 
-            <span className="plan">
-                <h3>Premium</h3>
-                <p>Perfeito para transformar ambientes e presentear.</p>
-            </span>
+                        <Button text="Comprar Agora" secondary />
 
-            <span className="price">
-                <h2>R$ 89,90</h2>
-            </span>
+                        <span className="hr"></span>
 
-            <Button text="Comprar Agora" />
+                        <span className="features">
+                            <img src={Check} alt="check" width={24} height={24} />
+                            <p>1 vela aromática</p>
+                        </span>
 
-            <span className="hr"></span>
+                        <span className="features">
+                            <img src={Check} alt="check" width={24} height={24} />
+                            <p>Embalagem presenteável</p>
+                        </span>
 
-            <span className="features">
-                <img src={Check} alt="check" width={24} height={24} />
-                <p>3 velas aromáticas</p>
-            </span>
+                        <span className="features">
+                            <img src={Check} alt="check" width={24} height={24} />
+                            <p>Escolha da fragrância</p>
+                        </span>
 
-            <span className="features">
-                <img src={Check} alt="check" width={24} height={24} />
-                <p>Fragrâncias exclusivas</p>
-            </span>
+                    </div>
 
-            <span className="features">
-                <img src={Check} alt="check" width={24} height={24} />
-                <p>Embalagem premium</p>
-            </span>
+                    {/* Kit Premium */}
+                    <div className="pricing-card premium">
 
-            <span className="features">
-                <img src={Check} alt="check" width={24} height={24} />
-                <p>Brinde especial</p>
-            </span>
+                        <span className="bonus">
+                            <p>MAIS VENDIDO</p>
+                        </span>
 
-        </div>
+                        <span className="plan">
+                            <h3>Premium</h3>
+                            <p>Perfeito para transformar ambientes e presentear.</p>
+                        </span>
 
-        {/* Kit Luxo */}
-        <div className="pricing-card">
+                        <span className="price">
+                            <h2>R$ 89,90</h2>
+                        </span>
 
-            <span className="plan">
-                <h3>Luxo</h3>
-                <p>Experiência completa para amantes de aromas.</p>
-            </span>
+                        <Button text="Comprar Agora" />
 
-            <h2>R$ 149,90</h2>
+                        <span className="hr"></span>
 
-            <Button text="Comprar Agora" secondary />
+                        <span className="features">
+                            <img src={Check} alt="check" width={24} height={24} />
+                            <p>3 velas aromáticas</p>
+                        </span>
 
-            <span className="hr"></span>
+                        <span className="features">
+                            <img src={Check} alt="check" width={24} height={24} />
+                            <p>Fragrâncias exclusivas</p>
+                        </span>
 
-            <span className="features">
-                <img src={Check} alt="check" width={24} height={24} />
-                <p>5 velas aromáticas</p>
-            </span>
+                        <span className="features">
+                            <img src={Check} alt="check" width={24} height={24} />
+                            <p>Embalagem premium</p>
+                        </span>
 
-            <span className="features">
-                <img src={Check} alt="check" width={24} height={24} />
-                <p>Fragrâncias exclusivas</p>
-            </span>
+                        <span className="features">
+                            <img src={Check} alt="check" width={24} height={24} />
+                            <p>Brinde especial</p>
+                        </span>
 
-            <span className="features">
-                <img src={Check} alt="check" width={24} height={24} />
-                <p>Caixa especial para presente</p>
-            </span>
+                    </div>
 
-            <span className="features">
-                <img src={Check} alt="check" width={24} height={24} />
-                <p>Cartão personalizado</p>
-            </span>
+                    {/* Kit Luxo */}
+                    <div className="pricing-card">
 
-        </div>
+                        <span className="plan">
+                            <h3>Luxo</h3>
+                            <p>Experiência completa para amantes de aromas.</p>
+                        </span>
 
-    </section>
+                        <h2>R$ 149,90</h2>
 
-</section>
+                        <Button text="Comprar Agora" secondary />
 
-<section id="contact" className="container">
+                        <span className="hr"></span>
 
-    <header>
-        <p>Envie sua dúvida</p>
+                        <span className="features">
+                            <img src={Check} alt="check" width={24} height={24} />
+                            <p>5 velas aromáticas</p>
+                        </span>
 
-        <h2>Entre em contato</h2>
+                        <span className="features">
+                            <img src={Check} alt="check" width={24} height={24} />
+                            <p>Fragrâncias exclusivas</p>
+                        </span>
 
-        <span>
-            Tem dúvidas sobre nossas velas artesanais,
-            deseja fazer um pedido especial ou presentear alguém?
-            Estamos prontos para ajudar.
-        </span>
-    </header>
+                        <span className="features">
+                            <img src={Check} alt="check" width={24} height={24} />
+                            <p>Caixa especial para presente</p>
+                        </span>
 
-    <ContactForm />
+                        <span className="features">
+                            <img src={Check} alt="check" width={24} height={24} />
+                            <p>Cartão personalizado</p>
+                        </span>
 
-</section>
+                    </div>
 
-<footer id="footer">
-    <div className="container footer-inner">
+                </section>
 
-        <div className="footer-brand">
-            <h3>Aromas Artesanais</h3>
-            <p>Velas feitas à mão com amor.</p>
-            <div className="footer-social">
-                <span aria-label="Instagram">
-                    <img src={Instagram} alt="Instagram" width={20} height={20} />
-                </span>
-                <span aria-label="Youtube">
-                    <img src={Youtube} alt="Youtube" width={20} height={20} />
-                </span>
-                <span aria-label="Facebook">
-                    <img src={Facebook} alt="Facebook" width={20} height={20} />
-                </span>
-            </div>
-        </div>
+            </section>
 
-        <nav className="footer-links">
-            <a href="#">Home</a>
-            <a href="#solution">Soluções</a>
-            <a href="#testimonials">Depoimentos</a>
-            <a href="#pricing">Kits</a>
-            <a href="#contact">Contato</a>
-        </nav>
+            <section id="contact" className="container">
 
-    </div>
+                <header>
+                    <p>Envie sua dúvida</p>
 
-    <div className="footer-copy">
-        <p>© 2026 Aromas Artesanais — Todos os direitos reservados.</p>
-    </div>
+                    <h2>Entre em contato</h2>
 
-</footer>
+                    <span>
+                        Tem dúvidas sobre nossas velas artesanais,
+                        deseja fazer um pedido especial ou presentear alguém?
+                        Estamos prontos para ajudar.
+                    </span>
+                </header>
+
+                <ContactForm />
+
+            </section>
+
+            <footer id="footer">
+                <div className="container footer-inner">
+
+                    <div className="footer-brand">
+                        <h3>Aromas Artesanais</h3>
+                        <p>Velas feitas à mão com amor.</p>
+                        <div className="footer-social">
+                            <span aria-label="Instagram">
+                                <img src={Instagram} alt="Instagram" width={20} height={20} />
+                            </span>
+                            <span aria-label="Youtube">
+                                <img src={Youtube} alt="Youtube" width={20} height={20} />
+                            </span>
+                            <span aria-label="Facebook">
+                                <img src={Facebook} alt="Facebook" width={20} height={20} />
+                            </span>
+                        </div>
+                    </div>
+
+                    <nav className="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#solution">Soluções</a>
+                        <a href="#testimonials">Depoimentos</a>
+                        <a href="#pricing">Kits</a>
+                        <a href="#contact">Contato</a>
+                    </nav>
+
+                </div>
+
+                <div className="footer-copy">
+                    <p>© 2026 Aromas Artesanais — Todos os direitos reservados.</p>
+                </div>
+
+            </footer>
 
 
 

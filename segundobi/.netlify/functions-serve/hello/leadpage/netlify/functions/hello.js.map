@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": ["../../../../../USU%C3%81RIO/Desktop/DESENVOLVIMENTO-WEB/segundobi/leadpage/netlify/functions/hello.ts"],
+  "sourceRoot": "C:/Users/USURIO~2/AppData/Local/Temp/tmp-8508-E8hXaQCoeuWb",
+  "sourcesContent": ["import type { Handler } from \"@netlify/functions\";\r\n\r\nexport const handler: Handler = async () => ({\r\n  statusCode: 200,\r\n  body: \"hello\",\r\n});"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAEO,IAAM,UAAmB,aAAa;AAAA,EAC3C,YAAY;AAAA,EACZ,MAAM;AACR;",
+  "names": []
+}
