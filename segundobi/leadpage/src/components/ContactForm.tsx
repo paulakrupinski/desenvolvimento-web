@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 import Button from "./Button";
 
 export default function ContactForm() {
@@ -6,23 +7,42 @@ export default function ContactForm() {
   const [message, setMessage] = useState("");
 
   async function sendContactEmail() {
-    await fetch("/api/send-email", {
+    const response = await fetch("/api/send-email", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({
         email,
         message,
       }),
     });
+
+    if (!response.ok) {
+      throw new Error("Erro ao enviar e-mail");
+    }
+
+    return response;
   }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
 
-    await sendContactEmail();
+    try {
+      await toast.promise(
+        sendContactEmail(),
+        {
+          pending: "Enviando mensagem...",
+          success: "Mensagem enviada com sucesso! ✅",
+          error: "Erro ao enviar a mensagem ❌",
+        }
+      );
 
-    setEmail("");
-    setMessage("");
+      setEmail("");
+      setMessage("");
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   return (

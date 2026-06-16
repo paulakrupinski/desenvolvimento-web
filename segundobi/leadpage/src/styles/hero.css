@@ -32,12 +32,12 @@
 
 .hero-content {
     flex: 1;
-    width: 100%; /* ✅ ocupa largura toda no mobile */
+    width: 100%; 
 }
 
 .hero-image {
     flex: 1.5;
-    width: 100%; /* ✅ ocupa largura toda no mobile */
+    width: 100%; 
 }
 
 .hero-image img {
@@ -51,7 +51,7 @@
 
 @media (width >= 1280px) {
     #hero {
-        flex-direction: row; /* ✅ desktop: lado a lado */
+        flex-direction: row; 
         justify-content: space-between;
         max-width: 1050px;
         margin-inline: auto;

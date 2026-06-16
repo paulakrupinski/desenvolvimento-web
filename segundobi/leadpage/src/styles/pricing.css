@@ -95,7 +95,7 @@
   #pricing {
     gap: 1rem;
     padding-block: 2rem;
-    min-height: 100vh;        /* ✅ só no desktop grande */
+    min-height: 100vh;      
     justify-content: center;
   }
 
