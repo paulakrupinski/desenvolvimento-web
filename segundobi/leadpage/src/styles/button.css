@@ -1,0 +1,39 @@
+.btn-primary {
+    width: 100%;
+    background: var(--second-text-color);   /* ✅ marrom escuro */
+    color: var(--light-text-color);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-sm);
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: solid transparent 0.15rem;
+}
+
+.btn-primary:hover {
+    background: var(--primary-color);     /* ✅ marrom claro no hover */
+    color: var(--light-text-color);
+    border-color: transparent;
+}
+
+.btn-secondary {
+    width: 100%;
+    background: transparent;      /* ✅ marrom claro sólido */
+    color: var(--text-color);        /* ✅ texto branco */
+    font-weight: var(--fw-md);
+    font-size: var(--fs-sm);
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    border-radius: 1rem;                   /* ✅ igual ao primary */
+    cursor: pointer;
+    border: 1px solid var(--secondary-color);/*✅ sem borda */
+}
+
+.btn-secondary:hover {
+    background: var(--light-gray);
+
+    color: var(--text-color);
+
+    border-color: var(--primary-color);
+}
